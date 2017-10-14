@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.bootcamp.jpa.enums;
+package com.bootcamp.rest.controllers;
 
 /**
  *
- * @author Iso-Doss
+ * @author Rosius
  */
-public enum TypeDeBailleur {
-    gouvernementales,
-    prive,
-    gouvernement,
-    partenaire_international;
+public class WelcomeRestController {
+    
 }

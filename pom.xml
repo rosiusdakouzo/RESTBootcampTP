@@ -78,8 +78,24 @@
   </dependencies>
   <build>
     <finalName>RESTBootcampTP</finalName>
+    <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+            </configuration>
+        </plugin>
+        <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jettyVersion}</version>
+        </plugin>
+    </plugins>
   </build>
   <properties>
         <jersey.version>1.18.1</jersey.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jettyVersion>9.2.6.v20141205</jettyVersion>
     </properties>
 </project>
